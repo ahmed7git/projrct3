@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+:root{   
+--Very-Dark-Magenta: hsl(300, 43%, 22%);
+--Soft-Pink: hsl(333, 80%, 67%);
+--Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+--Light-Grayish-Magenta: hsl(300, 24%, 96%);
+--White: hsl(0, 0%, 100%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "League Spartan", sans-serif;
+}
+
+main{
+    margin: 1rem;
+}
+
+body{
+    font-size: 14px;
+    background: var(--White);
+}
+
+.frdiv{
+    display: grid;
+    grid-template-columns: repeat(2, 60%);
+    grid-template-rows: 70%;
+    margin: 8rem 11rem;
+    width: 75%;
+}
+
+.h2{
+    color: var(--Very-Dark-Magenta);
+    font-size: 60px;
+    font-weight:700;
+    font-family: "League Spartan", sans-serif;
+    width: 65%;
+}
+
+.ap{
+    color: var(--Dark-Grayish-Magenta);
+    margin-top: 2rem;
+    width: 70%;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+}
+
+.ssp{
+    margin-right: -6rem;
+    
+}
+
+.leftdiv{
+    margin-bottom: 10rem;
+}
+
+.container{
+    font-size: 6px;
+    letter-spacing: 2px;
+    transform: translate(-72%, 55%);
+  }
+  .checked{
+    color:orange;
+  }
+
+h4{  
+    background: var(--Light-Grayish-Magenta);
+    color: var(--Very-Dark-Magenta);
+    width: 30rem;
+    border-radius: 8px;
+    height: 19%;
+    text-align: center;
+    font-size: 18px;
+    margin: 1rem 2rem 0rem;
+    place-content: center;
+}
+
+.sp{
+    font-size: 7px;
+    margin: 0rem -1rem -1rem -19rem;
+}
+
+.bottdiv{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 75%;
+    margin: -15rem 10rem 0rem 170px;
+    column-gap: 3%;
+}
+
+img{
+    width: 12%;
+    height: 17%;
+    border-radius: 50%;
+    margin: 3rem 22px;
+}
+
+.oned{
+    background: var(--Very-Dark-Magenta);
+    border-radius: 10px;
+    width: 23rem;
+    margin: 2rem 0rem;
+    height: 16rem;
+    color: var(--White);
+    box-shadow: -4px -4px 20px 0px black;
+}
+
+.twod{
+    background: var(--Very-Dark-Magenta);
+    border-radius: 10px;
+    width: 23rem;
+    margin: 3rem 0rem;
+    height: 16rem;
+    color: var(--White);
+    box-shadow: -4px -4px 20px 0px black;
+}
+
+.threed{
+    background: var(--Very-Dark-Magenta);
+    border-radius: 10px;
+    width: 23rem;
+    margin: 4rem 0rem;
+    height: 16rem;
+    color: var(--White);
+    box-shadow: -4px -4px 20px 0px black;
+}
+
+p{
+    font-size: 15px;
+    font-weight: 400;
+    font-family: "League Spartan", sans-serif;
+}
+
+.s{
+    color: var(--Soft-Pink);
+    position: relative;
+    bottom: 32%;
+    left: 23%;
+}
+
+.onep{
+    position: relative;
+    bottom: 35%;
+    left: 23%;
+}
+
+.pp{
+    width: 72%;
+    font-size: 16px;
+    margin: -3rem 0rem 0rem 3rem;
+    line-height: 21px;
+}
+
+.one{
+    margin: 2rem 0rem 0rem -5rem;
+}
+
+.two{
+    margin: 1rem 0rem 0rem -2rem;
+}
+
+.three{
+    margin: 20px 0rem 0rem 1rem;
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .project{
+        margin: 0;
+        padding:0;
+    }
+    .frdiv{
+        width: 50%;
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: 26% 30% 25% 25% 25%;
+        row-gap: 20%;
+        margin: 4rem 0rem 7rem 2rem;
+    }
+
+    .h2{
+        width: 100%;
+        text-align: center;
+        
+    }
+
+    .ap{
+        width: 74%;
+        line-height: 31px;
+        text-align: center;
+        margin-left: 5rem;
+        font-weight: 500;
+    }
+
+    .one,.two,.three{
+        margin: 2rem 0rem 0rem 2rem
+    }
+
+    h4{
+        height: 55%;
+    }
+
+    .bottdiv{
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: 25% 25% 25%;
+        margin: 0rem 0rem 0rem 5rem;
+        width: 50%;
+    }
+
+    .oned,.twod,.threed{
+        width: 205%;
+    }
+
+    img{
+        margin: 3rem 51px;
+    }
+    .onep,.s{
+        left: 30%;
+    }
+
+    .sp{
+        margin: 1rem -20rem 1rem -20rem;
+    }
+
+    .ssp{
+        margin: 0;
+    }
+
+    }
+  
+    button {
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+  
+  @media screen and (max-width: 280px) {
+  
+  
+
+        .oned, .twod, .threed {
+            width: 376%;
+        }
+    }
